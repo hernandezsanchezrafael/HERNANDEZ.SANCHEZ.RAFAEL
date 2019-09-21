@@ -1,0 +1,17 @@
+% Encoding: UTF-8
+
+@Electronic{Desconocidos2007-2018,
+  author       = {Desconocidos},
+  year         = {2007-2018},
+  title        = {Información (Celdas fotovoltaicas, Paneles solares, Baterias Li.Po, Puente H, Contro Motores, Programación)},
+  language     = {Español},
+  howpublished = {Blogs, Respuestas, Reportes.},
+  url          = {https://www.iluminet.com/funcionamiento-paneles-fotovoltaicos-energia-solar/
+https://dmsolar.mx/celdas-fotovoltaicas-tipos-y-su-funcionamiento/
+https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=11&ved=2ahUKEwjNpM3-sb_hAhVJM6wKHSeeBaIQFjAKegQIARAC&url=http%3A%2F%2Fkimerius.com%2Fapp%2Fdownload%2F5783169335%2FControl%2Bde%2Bmotores%2Bel%25C3%25A9ctricos.pdf&usg=AOvVaw21fagw1nMGFPQzTNYwLIIC
+http://electronicayciencia.blogspot.com/2010/09/receptor-coche-rc-de-dos-canales.html
+http://panamahitek.com/el-puente-h-invirtiendo-el-sentido-de-giro-de-un-motor-con-arduino/
+https://greenercorp.com/wp-content/uploads/wp_disenos_de_filos_para_cuchillas.pdf},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
