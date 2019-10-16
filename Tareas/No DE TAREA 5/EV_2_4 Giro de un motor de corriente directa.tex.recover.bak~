@@ -1,0 +1,101 @@
+\documentclass[11pt,letterpaper,fleqn]{article}
+\setlength{\parindent}{0 pt}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\author{Rafael Hernàndez Sànchez}
+\title{Amplificadores de Clase B}
+\begin{document}
+		\pagestyle{plain}{
+		\pagestyle{empty}
+		
+		\begin{center}
+			\par\vspace{3cm}
+			{
+				\Huge\textbf{\textit{Universidad politécnica de la zona metropolitana de Guadalajara}}
+			}
+			\par\vspace{0.35cm}
+			{
+				\Large{\textbf{CARRERA:} Ingenieria en Mecatrónica \\ \textbf{MATERIA:} Sistemas Electrónicos de Interfaz \\ \textbf{MAESTRO:} Carlos Enrique Morán Garabito \\ \textbf{GRADO Y GRUPO:} 4-B}
+			}
+			\par\vspace{1cm}
+			{
+				\large\textbf{Tarea 4: Explicar los Arreglos y Parametros de los Amplificadores de Clase B}
+			}
+			\par\vspace{1cm}
+			{
+				\large\textbf{Rafael Hernández Sánchez \\ 04/10/19 \\}
+			}
+			\includegraphics[scale=0.7]{UPZMG_Mecatr_nica}
+			
+			\par\vspace{3cm}
+			
+			
+		\end{center}
+		\clearpage
+		\newpage
+	}
+\section{OBJETIVOS}
+
+\begin{itemize}
+	\item Analizar el funcionamiento específico de éste tipo de amplificador.	
+	\item Determinar ventajas y desventajas del amplificador en estudio.
+	\item Explicar los arreglos y parámetros de los amplificadores Clase B
+\end{itemize}
+
+\section{MARCO TEÓRICO}
+
+
+Para mejorar la eficiencia de potencia total del amplificador de clase A previo reduciendo la potencia desperdiciada en forma de calor, es posible diseñar el circuito amplificador de potencia con dos transistores en su etapa de salida produciendo lo que comúnmente se denomina amplificador de clase B también. conocido como una configuración de amplificador push-pull .
+
+\begin{center}
+	\includegraphics[scale=0.5]{1}
+\end{center}
+
+Los amplificadores Push-Pull utilizan dos transistores "complementarios" o coincidentes, uno de tipo NPN y el otro de tipo PNP con ambos transistores de potencia que reciben la misma señal de entrada que es igual en magnitud, pero en fase opuesta entre sí . Esto resulta en un transistor solamente amplificar la mitad o 180 o del ciclo de forma de onda de entrada mientras que el otro transistor amplifica la otra mitad o restante 180 o del ciclo de forma de onda de entrada con las resultantes de ?dos mitades? está poniendo juntos de nuevo en la salida terminal.
+
+\subsection{Circuito Amplificador de Transformador Push-pull de Clase B}
+
+El circuito anterior muestra un circuito amplificador Clase B estándar que utiliza un transformador de entrada con toma central compensada, que divide la señal de forma de onda entrante en dos mitades iguales y que están desfasadas 180 ° entre sí. Otro transformador con toma central en la salida se utiliza para recombinar las dos señales que proporcionan la mayor potencia a la carga. Los transistores utilizados para este tipo de circuito amplificador push-pull de transformador son ambos transistores NPN con sus terminales de emisor conectados entre sí.
+	\begin{center}
+		\includegraphics[scale=0.4]{2}
+	\end{center}
+
+Aquí, la corriente de carga se comparte entre los dos dispositivos de transistor de potencia a medida que disminuye en un dispositivo y aumenta en el otro a lo largo del ciclo de señal, reduciendo el voltaje y la corriente de salida a cero. El resultado es que ambas mitades de la forma de onda de salida ahora oscilan desde cero hasta el doble de la corriente de reposo, reduciendo así la disipación. Esto tiene el efecto de casi duplicar la eficiencia del amplificador a alrededor del 70%.
+\\
+Suponiendo que no haya señal de entrada presente, entonces cada transistor lleva la corriente de colector quiescente normal, cuyo valor está determinado por la polarización de la base que está en el punto de corte. 
+
+\subsection{FUNCIONAMIENTO}
+
+El funcionamiento del amplificador de clase B tiene polarización CC cero ya que los transistores están polarizados en el corte, por lo que cada transistor solo conduce cuando la señal de entrada es mayor que la tensión del emisor base.
+
+\section{VENTAJAS Y DESVENTAJAS}
+
+\subsection{VENTAJAS}
+Es que la corriente de colector es cero cuando la señal de entrada al amplificador es cero. Por tanto, el transistor no disipa potencia en condición de reposo.
+
+\subsection{DESVENTAJAS}
+
+La inclusión de la región no linealde corte en el intervalo de operación. Esto es, a diferencia de la situación en clase A, no es posible eliminar el 5 por ciento de la región de operación sombreada en la parte inferior. Por tanto la distorsión que se produce cerca del punto Q se incluye en la señal de salida.
+
+\section{FUNCIONAMIENTO Y APLICACIÓN}
+Si el voltaje de entrada es positivo, de acuerdo a la conexión del transformador se tiene que Q1 conduce y Q2 esté en corte. Si el voltaje de entrada es negativo Q1 no conduce y Q2 conduce. Esto permitir· obtener la onda de salida de acuerdo a la siguiente imagen.
+\begin{center}
+	\includegraphics[scale=0.4]{3}
+\end{center}
+
+La corriente de colector es cero cuando la señal de entrada es cero, por lo tanto el transistor no disipa potencia en reposo. En CC, el VCEQ=VCC, y en CA, la variación de iC será solo positiva, considerando que la recta de carga es iC= 0, la recta corta en vCE=VCC,de acuerdo a lo siguiente.
+\begin{center}
+\includegraphics[scale=0.5]{4}
+\
+\end{center}
+Lo que corresponde a un 78.5 Por ciento de eficiencia en la conversión
+\section{CONCLUSIÓN}
+
+\section{CITAS}
+
+\end{document}
